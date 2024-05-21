@@ -1,6 +1,6 @@
-### Resources provided in this zip file:
+### Resources provided in this repository:
 ```
-For_SpeechLab/
+MarbleNet_VAD_non_streaming/
     ├── chunked_audio/
     │   ├── ali_far_train_trimmed/
     │   ├── ami_far_traim_trimmed/
