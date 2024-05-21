@@ -10,7 +10,17 @@ MarbleNet_VAD_non_streaming/
     ├── readme.md
     └── requirements.txt
 ```
-
+You will need to create `chunked_audio` and `sampled_config_60mins` folders.
+The `sampled_config_60mins` folder needs to follow this structure:
+```
+    └── sampled_config_60mins/
+        ├── example_dataset1/
+        │   ├── audio/
+        │   └── rttm/
+        └── example_dataset2/
+            ├── audio/
+            └── rttm/
+```
 ## Notes:
 - the **model_checkpoint** was trained with labels of background (0) and speech (1). background refers to non-speech.
 - if label of non-speech (0) and speech (1) is preferred. Follow the following steps:<br>
