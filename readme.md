@@ -91,7 +91,7 @@ pip install -r requirements.txt
 ```
 
 ## Infer with the following steps:
-### - Make sure you are within For_SpeechLab folder. You should be in the same level as chunked_audio folder!
+### - Make sure you are within MarbleNet_VAD_non_streaming folder. You should be in the same level as chunked_audio folder!
 ### - then in your terminal execute the command here:
 ```
 python -m marblenet_infer
