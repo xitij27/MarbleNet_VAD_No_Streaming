@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -N infer_marblenet4
+#PBS -l ngpus=1
+#PBS -l walltime=02:00:00
+#PBS -j oe
+#PBS -l mem=100gb
+cd /home/users/ntu/kshitij0/FYP/vad/code_and_model/egs/100E_KLASS_Marblenet_Inference_Sample
+
+source /home/users/ntu/kshitij0/FYP/vad/code_and_model/egs/100E_KLASS_Marblenet_Inference_Sample/marblenetenv/bin/activate
+
+#$cmd ./log/run_infer_dh.log \
+python marblenet_infer.py

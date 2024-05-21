@@ -1,0 +1,19 @@
+name: &name "MarbleNet-3x2x64"
+
+model:
+  sample_rate: 16000
+  repeat: 2
+  dropout: 0.0
+  kernel_size_factor: 1.0
+  labels: ['background', 'speech']
+
+  test_ds:
+    manifest_filepath: "???"
+    sample_rate: ${model.sample_rate}
+    labels: ${model.labels}
+    batch_size: 320
+    shuffle: False
+    num_workers: 0
+    pin_memory: true
+    test_loss_idx: 0
+    seed: 42
