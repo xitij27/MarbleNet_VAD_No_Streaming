@@ -1,8 +1,21 @@
-### Files provided in this repository:
+### Resources provided in this zip file:
 ```
-MarbleNet_VAD_non_streaming/
+For_SpeechLab/
     ├── chunked_audio/
+    │   ├── ali_far_train_trimmed/
+    │   ├── ami_far_traim_trimmed/
+    │   ├── ali_far_train_non_speech_manifest.json
+    │   ├── ali_far_train_speech_manifest.json
+    │   ├── ami_far_train_non_speech_manifest.json
+    │   ├── ami_far_train_speech_manifest.json
+    │   └── result.txt
     ├── sampled_config_60mins/
+    │   ├── ali_far/
+    │   │   ├── audio/
+    │   │   └── rttm/
+    │   └── ami_far/
+    │       ├── audio/
+    │       └── rttm/
     ├── src
     ├── marblenet_infer.py
     ├── marblenet_lite.yaml
@@ -10,17 +23,7 @@ MarbleNet_VAD_non_streaming/
     ├── readme.md
     └── requirements.txt
 ```
-You will need to create `chunked_audio` and `sampled_config_60mins` folders.
-The `sampled_config_60mins` folder needs to follow this structure:
-```
-    └── sampled_config_60mins/
-        ├── example_dataset1/
-        │   ├── audio/
-        │   └── rttm/
-        └── example_dataset2/
-            ├── audio/
-            └── rttm/
-```
+
 ## Notes:
 - the **model_checkpoint** was trained with labels of background (0) and speech (1). background refers to non-speech.
 - if label of non-speech (0) and speech (1) is preferred. Follow the following steps:<br>
@@ -88,7 +91,7 @@ pip install -r requirements.txt
 ```
 
 ## Infer with the following steps:
-### - Make sure you are within MarbleNet_VAD_non_streaming folder. You should be in the same level as chunked_audio folder!
+### - Make sure you are within For_SpeechLab folder. You should be in the same level as chunked_audio folder!
 ### - then in your terminal execute the command here:
 ```
 python -m marblenet_infer
